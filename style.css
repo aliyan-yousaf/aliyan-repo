@@ -573,6 +573,33 @@ footer {
         justify-content: center;
     }
 
+    .nav-links {
+    position: absolute;
+    top: 70px;
+    right: -100%;
+    width: 220px;
+    height: 100vh;
+    background: #1a2a4a;
+    flex-direction: column;
+    padding-top: 30px;
+    transition: 0.5s;
+    display: flex;
+}
+
+#menu-check{
+    display: none;
+}
+
+#menu-check:checked ~ .nav-links{
+    right: 0;
+}
+
+.menu-icon{
+    display: block;
+    width: 28px;
+    cursor: pointer;
+}
+
     .hero-content p {
         font-size: 13px;
     
@@ -708,8 +735,7 @@ body {
     border-radius: 2px;
     margin-bottom: 20px;
 }
- 
-/* ===== LISTS ===== */
+
 .footer-list {
     list-style: none;
     display: flex;
